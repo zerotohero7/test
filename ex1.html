@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 1</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+    var Tableau = [19, 5, 42, 2, 77]
+    console.log(Tableau)
+    
+    var newTable = []
+    
+    for (let i = 0; i < Tableau.length; i++) {
+        const arr = Tableau[i];
+        if (arr>0) {
+            newTable.push(arr)
+        }
+    }
+        
+    console.log(newTable)
+    
+    var min1 =  Math.min(...Tableau)
+    console.log(min1)
+    Tableau.splice(Tableau.indexOf(min1),1)
+    var min2 =  Math.min(...Tableau)
+    console.log(min2)
+
+    var final = min1 + min2
+    console.log(final)
+
+    </script>
+</body>
+</html>

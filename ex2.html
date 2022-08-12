@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 2</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        var myarray =  [1,-4,7,12]
+
+        var newarray = []
+        
+        for (let i = 0; i < myarray.length; i++) {
+            const arr = myarray[i];
+            if (arr>0) {
+                newarray.push(arr)              
+            }
+        }
+        console.log(newarray)
+
+        let sun = 0
+        for (let i = 0; i < newarray.length; i++) {
+             sun += newarray[i];
+        }
+        
+        console.log(sun)
+    </script>
+</body>
+</html>
